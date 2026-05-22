@@ -1,11 +1,6 @@
-import { ReactNode } from 'react';
 import { AdminNavLink } from '@/components/layout/AdminNavLink.client';
 
-type AdminSidebarProps = {
-  children: ReactNode;
-};
-
-export default function AdminSidebar({ children }: AdminSidebarProps) {
+export default function AdminSidebar() {
   return (
     <div className="flex min-h-screen">
       <aside className="w-64 border-r p-6">
@@ -16,8 +11,6 @@ export default function AdminSidebar({ children }: AdminSidebarProps) {
           <AdminNavLink href="/admin/products">Products</AdminNavLink>
         </nav>
       </aside>
-
-      <main className="flex-1 p-10">{children}</main>
     </div>
   );
 }
