@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import { AdminNavLink } from "@/components/layout/AdminNavLink.client";
+import { ReactNode } from 'react';
+import { AdminNavLink } from '@/components/layout/AdminNavLink.client';
 
 type AdminSidebarProps = {
   children: ReactNode;

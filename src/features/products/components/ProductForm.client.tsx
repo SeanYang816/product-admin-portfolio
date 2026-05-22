@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 import {
   validateProductForm,
   ProductFormErrors,
-} from "@/features/products/utils/validate-product-form";
+} from '@/features/products/utils/validate-product-form';
 
 type ProductFormProps = {
   initialValues?: {
@@ -17,8 +17,8 @@ type ProductFormProps = {
 
 export function ProductForm({ initialValues }: ProductFormProps) {
   const router = useRouter();
-  const [name, setName] = useState(initialValues?.name ?? "");
-  const [price, setPrice] = useState(initialValues?.price?.toString() ?? "");
+  const [name, setName] = useState(initialValues?.name ?? '');
+  const [price, setPrice] = useState(initialValues?.price?.toString() ?? '');
   const [errors, setErrors] = useState<ProductFormErrors>({});
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -40,9 +40,9 @@ export function ProductForm({ initialValues }: ProductFormProps) {
       price: Number(price),
     });
 
-    alert(initialValues ? "Product updated." : "Product created.");
+    alert(initialValues ? 'Product updated.' : 'Product created.');
 
-    router.push("/admin/products");
+    router.push('/admin/products');
   }
 
   return (
@@ -69,7 +69,7 @@ export function ProductForm({ initialValues }: ProductFormProps) {
       </div>
 
       <button className="rounded bg-black px-4 py-2 text-white">
-        {initialValues ? "Update" : "Create"}
+        {initialValues ? 'Update' : 'Create'}
       </button>
     </form>
   );

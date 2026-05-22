@@ -1,14 +1,14 @@
-import type { Product } from "../types/product";
+import type { Product } from '../types/product';
 
 export const products: Product[] = [
   {
-    id: "1",
-    name: "iPhone 16",
+    id: '1',
+    name: 'iPhone 16',
     price: 35000,
   },
   {
-    id: "2",
-    name: "MacBook Pro",
+    id: '2',
+    name: 'MacBook Pro',
     price: 72000,
   },
 ];

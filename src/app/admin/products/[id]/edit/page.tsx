@@ -1,6 +1,6 @@
-import { notFound } from "next/navigation";
-import { getProductById } from "@/features/products/data/products";
-import { ProductForm } from "@/features/products/components/ProductForm.client";
+import { notFound } from 'next/navigation';
+import { getProductById } from '@/features/products/data/products';
+import { ProductForm } from '@/features/products/components/ProductForm.client';
 
 type EditProductPageProps = {
   params: Promise<{

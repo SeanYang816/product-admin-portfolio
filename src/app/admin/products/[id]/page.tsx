@@ -1,6 +1,6 @@
-import { notFound } from "next/navigation";
-import { getProductById } from "@/features/products/data/products";
-import ProductDetail from "@/features/products/components/ProductDetail";
+import { notFound } from 'next/navigation';
+import { getProductById } from '@/features/products/data/products';
+import ProductDetail from '@/features/products/components/ProductDetail';
 
 type ProductDetailPageProps = {
   params: Promise<{

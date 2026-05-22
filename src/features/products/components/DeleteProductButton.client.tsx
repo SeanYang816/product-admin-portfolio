@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { useRouter } from "next/navigation";
+import { useRouter } from 'next/navigation';
 
 type DeleteProductButtonProps = {
   productId: string;
@@ -10,15 +10,15 @@ export function DeleteProductButton({ productId }: DeleteProductButtonProps) {
   const router = useRouter();
 
   function handleDelete() {
-    const confirmed = confirm("Are you sure you want to delete this product?");
+    const confirmed = confirm('Are you sure you want to delete this product?');
 
     if (!confirmed) return;
 
-    console.log("Delete product:", productId);
+    console.log('Delete product:', productId);
 
-    alert("Product deleted.");
+    alert('Product deleted.');
 
-    router.push("/admin/products");
+    router.push('/admin/products');
   }
 
   return (

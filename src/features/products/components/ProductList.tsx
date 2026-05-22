@@ -1,7 +1,7 @@
-import { products } from "../data/products";
-import { ProductCard } from "./ProductCard";
-import { CreateProductButton } from "./CreateProductButton";
-import { ProductSearchInput } from "./ProductSearchInput.client";
+import { products } from '../data/products';
+import { ProductCard } from './ProductCard';
+import { CreateProductButton } from './CreateProductButton';
+import { ProductSearchInput } from './ProductSearchInput.client';
 
 type ProductListProps = {
   query: string;

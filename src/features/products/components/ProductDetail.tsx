@@ -1,7 +1,7 @@
-import Link from "next/link";
-import type { Product } from "../types/product";
-import { formatProductPrice } from "../utils/format-product-price";
-import { DeleteProductButton } from "./DeleteProductButton.client";
+import Link from 'next/link';
+import type { Product } from '../types/product';
+import { formatProductPrice } from '../utils/format-product-price';
+import { DeleteProductButton } from './DeleteProductButton.client';
 
 type ProductDetailProps = {
   product: Product;

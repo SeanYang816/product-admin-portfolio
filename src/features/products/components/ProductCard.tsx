@@ -1,6 +1,6 @@
-import Link from "next/link";
-import type { Product } from "../types/product";
-import { formatProductPrice } from "../utils/format-product-price";
+import Link from 'next/link';
+import type { Product } from '../types/product';
+import { formatProductPrice } from '../utils/format-product-price';
 
 type ProductCardProps = {
   product: Product;

@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import AdminSidebar from "@/components/layout/AdminSidebar";
+import { ReactNode } from 'react';
+import AdminSidebar from '@/components/layout/AdminSidebar';
 
 type AdminLayoutProps = {
   children: ReactNode;

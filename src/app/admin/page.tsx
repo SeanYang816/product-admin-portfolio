@@ -1,4 +1,4 @@
-import { ProductSummaryCards } from "@/features/products/components/ProductSummaryCards";
+import { ProductSummaryCards } from '@/features/products/components/ProductSummaryCards';
 
 export default function AdminPage() {
   return (

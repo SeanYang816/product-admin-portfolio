@@ -1,4 +1,4 @@
-import { ProductList } from "@/features/products/components/ProductList";
+import { ProductList } from '@/features/products/components/ProductList';
 
 type ProductsPageProps = {
   searchParams: Promise<{
@@ -9,7 +9,7 @@ type ProductsPageProps = {
 export default async function ProductsPage({
   searchParams,
 }: ProductsPageProps) {
-  const { query = "" } = await searchParams;
+  const { query = '' } = await searchParams;
 
   return <ProductList query={query} />;
 }

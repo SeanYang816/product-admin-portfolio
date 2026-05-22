@@ -1,5 +1,5 @@
-import { products } from "../data/products";
-import { formatProductPrice } from "../utils/format-product-price";
+import { products } from '../data/products';
+import { formatProductPrice } from '../utils/format-product-price';
 
 export function ProductSummaryCards() {
   const totalProducts = products.length;
